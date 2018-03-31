@@ -3,6 +3,17 @@ import TodoForm from './TodoForm'
 import TodoList from "./TodoList"
 
 window.id = 0;
+
+const Title = () => {
+    return (
+        <div>
+            <div>
+                <h1>to-do</h1>
+            </div>
+        </div>
+    );
+}
+
 class TodoApp extends React.Component {
     constructor(props) {
         // Pass props to parent class
@@ -32,16 +43,15 @@ class TodoApp extends React.Component {
     }
 
     render() {
-        // Render JSX
+
         return (
             <div>
                 <Title />
                 <TodoForm addTodo={this.addTodo.bind(this)} />
-                <TodoList
-                    todos={this.state.data}
-                    remove={this.handleRemove.bind(this)}
-                />
+                <TodoList todos={this.state.data}  remove={this.handleRemove.bind(this)} />
             </div>
         );
     }
 }
+
+export default TodoApp;

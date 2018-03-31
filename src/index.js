@@ -1,7 +1,9 @@
-//import TodoApp from './components/TodoApp';
-import ReactDOM from "react-dom";
+import React from "react";
+import { render } from "react-dom";
+import TodoApp from './components/TodoApp';
 
-ReactDOM.render(
-    <h1>coucou tout lem onde </h1>,
+
+render(
+    <TodoApp/>,
     document.getElementById('root')
 );
