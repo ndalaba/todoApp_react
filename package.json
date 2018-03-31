@@ -1,0 +1,29 @@
+{
+  "name": "Todo",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "repository": "https://github.com/ndalaba/todoApp_react.git",
+  "author": "N'Dalaba Diallo <dmn@dev-hoster.com>",
+  "license": "MIT",
+  "scripts": {
+    "watch": "webpack -d --watch",
+    "build": "webpack",
+    "serve": "serve ./public",
+    "start": "nodemon",
+    "dev": "webpack-dev-server"
+  },
+  "dependencies": {
+    "path": "^0.12.7",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "webpack": "^4.4.1",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack-cli": "^2.0.13"
+  }
+}
